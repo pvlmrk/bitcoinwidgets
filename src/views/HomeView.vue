@@ -1,5 +1,17 @@
+<script setup>
+import HeroSection from '@/components/home/HeroSection.vue'
+import { Input } from '@/components/ui/input'
+import Hero from '@/components/home/HeroSection.vue'
+import WhyUs from '@/components/home/WhyUs.vue'
+import HowItWorks from '@/components/home/HowItWorks.vue'
+import Footer from '@/components/layout/Footer.vue'
+</script>
+
 <template>
-  <main class="container mx-auto px-6">
-    <h1>Home</h1>
+  <main>
+    <HeroSection />
+    <WhyUs />
+    <HowItWorks />
+    <Footer />
   </main>
 </template>
