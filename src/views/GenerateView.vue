@@ -1,5 +1,6 @@
 <script setup>
 import { Input } from "@/components/ui/input";
+import Footer from "@/components/layout/Footer.vue";
 </script>
 <template>
   <main class="container mx-auto px-6 py-12 max-w-[1400px]">
