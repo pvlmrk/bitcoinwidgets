@@ -49,10 +49,7 @@ const handleNavigation = () => {
       v-if="isMenuOpen"
       class="fixed inset-0 bg-white z-40"
     >
-      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-        <RouterLink @click="handleNavigation" to="/" class="font-inter font-bold text-2xl">
-          Bitcoin Widgets
-        </RouterLink>
+      <div class="container mx-auto px-8 py-6 flex justify-end items-center">
         
         <button 
           class="p-2"

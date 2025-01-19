@@ -1,6 +1,7 @@
 <script setup>
 import { Input } from "@/components/ui/input";
 import Footer from "@/components/layout/Footer.vue";
+import ColorPicker from "@/components/ui/ColorPicker.vue";
 </script>
 <template>
   <main class="container mx-auto px-6 py-12 max-w-[1400px]">
@@ -41,7 +42,8 @@ import Footer from "@/components/layout/Footer.vue";
       <div>
         <label class="block font-medium mb-2">Color</label>
         <div class="flex gap-2">
-          <div class="w-8 h-8 rounded-md bg-[#40B8F8] cursor-pointer border border-black/5"></div>
+          <!-- <div class="w-8 h-8 rounded-md bg-[#40B8F8] cursor-pointer border border-black/5"></div> -->
+          <ColorPicker />
         </div>
       </div>
     </div>
@@ -56,15 +58,8 @@ import Footer from "@/components/layout/Footer.vue";
             How your widget will look like on the web.
           </p>
 
-          <div class="w-full sm:w-[350px] bg-[#40B8F8] rounded-2xl p-6 shadow-widget">
-            <div class="flex flex-col items-center text-center">
-              <div class="w-20 h-20 rounded-full bg-gray-200 mb-3"></div>
-              <div class="text-white font-medium">Satoshi Nakamoto</div>
-              <div class="text-white/80 text-sm mb-4">Creator of Bitcoin</div>
-              <Button class="w-full bg-white text-black hover:bg-white/90">
-                Donate bitcoin
-              </Button>
-            </div>
+          <div class="w-full sm:w-[350px]">
+            
           </div>
         </div>
 
