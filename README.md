@@ -1,14 +1,26 @@
-# bitcoin-widgets
+# Bitcoin Widgets
 
-This template should help get you started developing with Vue 3 in Vite.
+**Disclaimer:** This is not the final version. This base website is fully functioning, but more adjustments and design changes are coming. Stay tuned for updates and improvements. You can view the current live version [bitcoinwidgets.vercel.app](https://bitcoinwidgets.vercel.app/).
+
+## Overview
+
+Bitcoin Widgets is a web application designed to help you easily create and integrate customizable Bitcoin donation widgets into your website. With this tool, you can adjust key details such as your name, description, Bitcoin address, profile picture, and widget color to match your personal or brand identity. This project serves as a foundation for more advanced features and design refinements that will be added in future updates.
+
+## Features
+
+- **Customizable Widget:** Adjust text, images, and colors to create a unique Bitcoin donation widget.
+- **Live Preview:** Instantly see how your widget will look on your website.
+- **Easy Integration:** Copy the generated HTML code and paste it into your site for quick integration.
+- **Modern Development Stack:** Built with Vue 3 and Vite for a fast and efficient development experience.
 
 ## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **VSCode** with [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)  
+  *(Remember to disable Vetur.)*
 
-## Customize configuration
+## Customize Configuration
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+For further customization, refer to the [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
