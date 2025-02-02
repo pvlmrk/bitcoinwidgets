@@ -4,7 +4,6 @@ import { Input } from '@/components/ui/input'
 import Hero from '@/components/home/HeroSection.vue'
 import WhyUs from '@/components/home/WhyUs.vue'
 import HowItWorks from '@/components/home/HowItWorks.vue'
-import Footer from '@/components/layout/Footer.vue'
 </script>
 
 <template>
@@ -12,6 +11,5 @@ import Footer from '@/components/layout/Footer.vue'
     <HeroSection />
     <WhyUs />
     <HowItWorks />
-    <Footer />
-  </main>
+\  </main>
 </template>
