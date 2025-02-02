@@ -1,6 +1,6 @@
 # Bitcoin Widgets
 
-**Disclaimer:** This is not the final version. This base website is fully functioning, but more adjustments and design changes are coming. Stay tuned for updates and improvements. You can view the current live version [bitcoinwidgets.vercel.app](https://bitcoinwidgets.vercel.app/).
+**Disclaimer:** This is not the final version. This base website is fully functioning, but more adjustments and design changes are coming. Stay tuned for updates and improvements. You can view the current live version at <a href="https://bitcoinwidgets.vercel.app/" target="_blank" rel="noopener noreferrer">bitcoinwidgets.vercel.app</a>.
 
 ## Overview
 
