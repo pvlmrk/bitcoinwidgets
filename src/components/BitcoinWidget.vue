@@ -1,14 +1,15 @@
 <template>
   <div>
     <bitcoin-widget
-      name="Bitcoin Magazine"
-      description="News and information in Bitcoin"
-      image="https://pbs.twimg.com/profile_images/1444022922377576453/AzvXYXGr_400x400.jpg"
+      name="Satoshi Nakamoto"
+      description="Creator of Bitcoin"
+      image="https://cdn.britannica.com/37/238937-050-45D054F6/Bitcoin-inventor-Satoshi-Nakamoto-pictured-on-a-coin.jpg"
       address="bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh"
-      accent="#4d4d4d"
+      accent="#5ecfc7"
       button-text="Donate Bitcoin"
     />
   </div>
+ 
 </template>
 
 <script>
