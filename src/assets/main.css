@@ -7,3 +7,350 @@
 html {
   font-family: 'Inter', sans-serif;
 }
+
+/* Base variables */
+:root {
+  --bitcoin-orange: #F7931A;
+  --bitcoin-light: #FFAE42;
+  --bitcoin-dark: #E67F17;
+  --slate-50: #F8FAFC;
+  --slate-100: #F1F5F9;
+  --slate-200: #E2E8F0;
+  --slate-400: #94A3B8;
+  --slate-700: #334155;
+  --slate-800: #1E293B;
+  --slate-900: #0F172A;
+  --success: #10B981;
+  --info: #3B82F6;
+  
+  --transition-fast: 150ms;
+  --transition-medium: 250ms;
+  --transition-slow: 350ms;
+  --ease-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --ease-in-out: cubic-bezier(0.42, 0, 0.58, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-glow: 0 0 15px rgba(247, 147, 26, 0.4);
+}
+
+/* Global styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--slate-50);
+  color: var(--slate-900);
+  overflow-x: hidden;
+}
+
+/* Scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Smooth transitions for all interactive elements */
+a, button, input, textarea, select {
+  transition: all var(--transition-medium) var(--ease-out);
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid var(--bitcoin-orange);
+  outline-offset: 2px;
+}
+
+/* Remove autofill background color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Bitcoin logo styles */
+.bitcoin-icon {
+  color: var(--bitcoin-orange);
+  font-weight: 600;
+}
+
+/* Button hover animation */
+.btn-hover-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-hover-effect::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(-100%);
+  transition: transform var(--transition-medium) var(--ease-out);
+}
+
+.btn-hover-effect:hover::after {
+  transform: translateX(0);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--bitcoin-orange), var(--bitcoin-light));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Subtle grid background */
+.grid-bg {
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f1f5f9' fill-opacity='1'%3E%3Cpath d='M0 0h10v10H0zm10 10h10v10H10z'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: transform var(--transition-medium) var(--ease-out), 
+              box-shadow var(--transition-medium) var(--ease-out);
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--slate-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--slate-400);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--slate-400);
+}
+
+/* Page transitions */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Bitcoin specific animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(247, 147, 26, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(247, 147, 26, 0.6);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* Dark mode styles */
+.dark {
+  /* Background colors */
+  --bg-primary: #0F172A;
+  --bg-secondary: #1E293B;
+  --bg-tertiary: #334155;
+  --bg-input: #1E293B;
+  --bg-card: #1E293B;
+  
+  /* Text colors */
+  --text-primary: #F8FAFC;
+  --text-secondary: #E2E8F0; 
+  --text-tertiary: #94A3B8;
+  --text-input: #F8FAFC;
+  
+  /* Border colors */
+  --border-light: #334155;
+  --border-input: #475569;
+  
+  /* Shadow colors */
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  
+  /* Element-specific colors */
+  --card-bg: #1E293B;
+  --code-bg: #0F172A;
+  --button-bg: #2D3748;
+  --button-hover: #4A5568;
+}
+
+/* Base elements in dark mode */
+.dark body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Background colors */
+.dark .bg-white {
+  background-color: var(--bg-secondary);
+}
+
+.dark .bg-slate-50, 
+.dark .bg-slate-100 {
+  background-color: var(--bg-tertiary);
+}
+
+/* Text colors */
+.dark .text-slate-900,
+.dark .text-slate-800 {
+  color: var(--text-primary);
+}
+
+.dark .text-slate-700, 
+.dark .text-slate-600 {
+  color: var(--text-secondary);
+}
+
+.dark .text-slate-500, 
+.dark .text-slate-400 {
+  color: var(--text-tertiary);
+}
+
+/* Input elements */
+.dark input,
+.dark textarea,
+.dark select {
+  background-color: var(--bg-input);
+  color: var(--text-input);
+  border-color: var(--border-input);
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder,
+.dark select::placeholder {
+  color: var(--text-tertiary);
+}
+
+/* Button styles */
+.dark .bg-black,
+.dark .hover\:bg-black {
+  background-color: var(--button-bg);
+}
+
+.dark .hover\:bg-black\/90:hover {
+  background-color: var(--button-hover);
+}
+
+/* Card and container styles */
+.dark .border,
+.dark .border-slate-100,
+.dark .border-slate-200 {
+  border-color: var(--border-light);
+}
+
+.dark .shadow-sm,
+.dark .shadow,
+.dark .shadow-md,
+.dark .shadow-lg {
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+/* Code and pre elements */
+.dark pre,
+.dark code {
+  background-color: var(--code-bg);
+  color: var(--text-secondary);
+  border-color: var(--border-light);
+}
+
+/* Charts and visualizations */
+.dark .recharts-text {
+  fill: var(--text-secondary);
+}
+
+.dark .recharts-cartesian-grid line {
+  stroke: var(--border-light);
+}
+
+.dark .recharts-tooltip {
+  background-color: var(--bg-secondary) !important;
+  border-color: var(--border-light) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Specific component overrides */
+.dark .grid-bg {
+  opacity: 0.1;
+}
+
+.dark bitcoin-widget {
+  filter: brightness(0.9);
+}
+
+/* From-to gradients */
+.dark .from-slate-50, 
+.dark .to-white,
+.dark .from-white, 
+.dark .to-slate-50 {
+  --tw-gradient-from: var(--bg-primary);
+  --tw-gradient-to: var(--bg-secondary);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.dark .from-slate-100, 
+.dark .to-slate-200 {
+  --tw-gradient-from: var(--bg-secondary);
+  --tw-gradient-to: var(--bg-tertiary);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+/* Scrollbar in dark mode */
+.dark::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+.dark::-webkit-scrollbar-thumb {
+  background: var(--bg-tertiary);
+}
+
+.dark::-webkit-scrollbar-thumb:hover {
+  background: var(--text-tertiary);
+}
