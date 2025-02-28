@@ -15,7 +15,13 @@ const router = createRouter({
       name: 'generate',
       component: GenerateView
     }
-  ]
+  ],
+  scrollBehavior() {
+    return { 
+      top: 0,
+      behavior: ''
+    }
+  }
 })
 
 export default router

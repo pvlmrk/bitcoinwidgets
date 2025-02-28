@@ -11,5 +11,5 @@ import HowItWorks from '@/components/home/HowItWorks.vue'
     <HeroSection />
     <WhyUs />
     <HowItWorks />
-\  </main>
+  </main>
 </template>
