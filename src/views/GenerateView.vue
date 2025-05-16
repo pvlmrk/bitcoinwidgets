@@ -304,7 +304,7 @@ watch(widgetData, () => {
           </p>
 
           <div class="flex justify-center p-4 bg-slate-50 rounded-lg">
-            <div class="relative transform hover:scale-[1.02] transition-transform duration-300">
+            <div class="relative">
               <!-- Glow effect (subtle) -->
               <div class="absolute -inset-1 bg-gradient-to-r from-slate-200 to-white rounded-xl blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
