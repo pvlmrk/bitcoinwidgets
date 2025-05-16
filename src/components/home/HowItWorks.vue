@@ -16,7 +16,7 @@
           <span class="flex items-center justify-center w-10 h-10 bg-gradient-bitcoin text-white rounded-full font-bold shadow-md mr-3">1</span>
           <h3 class="font-bold text-lg sm:text-xl text-slate-800">Profile view</h3>
         </header>
-        <div class="relative w-full transition-all duration-300 transform group-hover:scale-[1.02]">
+        <div class="relative w-full">
           <bitcoin-widget
             name="Satoshi Nakamoto"
             description="Creator of Bitcoin"
@@ -34,7 +34,7 @@
           <span class="flex items-center justify-center w-10 h-10 bg-gradient-bitcoin text-white rounded-full font-bold shadow-md mr-3">2</span>
           <h3 class="font-bold text-lg sm:text-xl text-slate-800">Amount entry</h3>
         </header>
-        <div class="relative w-full transition-all duration-300 transform group-hover:scale-[1.02]">
+        <div class="relative w-full">
           <bitcoin-widget
             name="Satoshi Nakamoto"
             description="Creator of Bitcoin"
@@ -52,7 +52,7 @@
           <span class="flex items-center justify-center w-10 h-10 bg-gradient-bitcoin text-white rounded-full font-bold shadow-md mr-3">3</span>
           <h3 class="font-bold text-lg sm:text-xl text-slate-800">QR payment</h3>
         </header>
-        <div class="relative w-full transition-all duration-300 transform group-hover:scale-[1.02]">
+        <div class="relative w-full">
           <bitcoin-widget
             name="Satoshi Nakamoto"
             description="Creator of Bitcoin"
@@ -70,7 +70,7 @@
           <span class="flex items-center justify-center w-10 h-10 bg-gradient-bitcoin text-white rounded-full font-bold shadow-md mr-3">4</span>
           <h3 class="font-bold text-lg sm:text-xl text-slate-800">Success</h3>
         </header>
-        <div class="relative w-full transition-all duration-300 transform group-hover:scale-[1.02]">
+        <div class="relative w-full">
           <bitcoin-widget
             name="Bitcoin Magazine"
             description="News in Bitcoin"
