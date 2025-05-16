@@ -53,7 +53,7 @@ const handleGenerateClick = () => {
             </svg>
           </div>
           
-          <div class="relative z-10 transform hover:scale-[1.02] transition-transform duration-300">
+          <div class="relative z-10">
             <BitcoinWidget
               name="Bitcoin Widgets"
               description="Interactive payment solution for your site"
