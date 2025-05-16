@@ -246,7 +246,7 @@ watch(widgetData, () => {
               v-model="widgetData.accent" 
               @update:modelValue="(color) => widgetData.accent = color" 
             />
-            <div class="flex justify-end gap-3">
+            <div class="flex flex-wrap justify-end gap-3">
               <Button 
                 @click="loadSavedWidgets" 
                 variant="outline"
